@@ -20,5 +20,12 @@ Note:
 
 `-l:` count `l`ines.
 
+### Set up diffrent gcc and g++
+
+```
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 70 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+```
+`--slave` : make the gcc-5 and g++5 change together
 
 
